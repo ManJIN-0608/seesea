@@ -1,19 +1,39 @@
+/* Overall font color and font family */
 body{
     color: grey;
     font-family: 'Quicksand', serif;
 }
 
+/* Allow long words to be able to break and wrap onto the next line on a paragraph */
+p {
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+
+/* font color for specific part */
 #aboutme 
 {
     color:skyblue;
 }
 
+/* font color for specific part */
 #mypassion 
 {
     color:skyblue;
 }
 
-ul {
+/* sperate 2 divs on both sides  */
+.left {
+    float: left;
+  }
+
+.right {
+    margin-left: 310px;
+    height: 300px;
+}
+
+/* navigation format */
+.header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -25,11 +45,13 @@ ul {
     top: 0;
     width: 100%; */
 }
- 
+
+/* content format on navigation */
 .header li {
     float: left;
 }
- 
+
+/* links format on navigation*/ 
 .header li a {
     display: block;
     color: white;
@@ -38,11 +60,12 @@ ul {
     text-decoration: none;
 }
  
-/*Mouse over options to change the background color */
+/*Mouse over options to change the background color on navigation*/
 .header li a:hover {
     background-color: rgb(19, 188, 218);
 }
 
+/* background image on index.html */
 .header {
     background-image: url('../Images/bg.jpg');
     background-position: center center;
@@ -50,15 +73,17 @@ ul {
     height: 700px;
     width: 100%;
 }
-  
+
+/* background text on index.html */  
 #header-text{
     margin: 0 auto;
     position: relative;
     text-align: center;
-    /* top: 25%; */
+    top: 10%;
     width: 60%;
 }
 
+/* background image on other html pages */
 #banner {
     background-image: url('../Images/banner.jpg');
     background-position: center center;
@@ -66,7 +91,8 @@ ul {
     height: 300px;
     width: 100%;
 }
-  
+
+/* background text on other html pages */
 #banner-text{
     margin: 0 auto;
     position: relative;
@@ -75,18 +101,38 @@ ul {
     width: 60%;
 }
 
-h1{
+/* text format on banner */
+#banner-text h1{
     color: white;
     font-family: 'Quicksand', serif;
 
 }
 
-h2{
+/* text format on header */
+#header-text h1{
     color: white;
     font-family: 'Quicksand', serif;
 
-  }
+}
 
+/* text format on header */
+#header-text h2{
+    color: white;
+    font-family: 'Quicksand', serif;
+
+}
+
+.site {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+/* keep sourcelog table 50px away from top*/
+.sourcelog {
+    padding-top: 50px;
+}
+
+/* table format on source log*/
 table {
     width: 80%;
     border-collapse: collapse;
@@ -100,8 +146,8 @@ th {
   }
 
 th, td{
-padding: 15px;
-  text-align: left;
+    padding: 15px;
+    text-align: left;
 }
 
 tr:hover {
@@ -112,6 +158,7 @@ caption{
     font-size: 20px;
 }
 
+/* keep "form" on the centre */
 .form
 {
     display: block;
@@ -121,6 +168,7 @@ caption{
     justify-content:center;
 }
 
+/* form format */
 form {
     color: black;
     display: inline-block;
@@ -135,21 +183,10 @@ form label{
     font-weight:bold;
 }
 
-input {
+form input {
     margin: 10px;
 }
 
-#sitemap {
-    list-style-type: none;
 
-    background-color: rgba(0,0,0,0.15);
-    font-weight: bold;
-    text-align:center;
-    /* position: fixed;
-    top: 0;
-    width: 100%; */
-}
 
-.sourcelog {
-    padding-top: 50px;
-}
+
