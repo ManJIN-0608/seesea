@@ -4,12 +4,16 @@
 <title>
     Feedback
 </title>
-<link rel="stylesheet" type="text/css" href="CSS/part1.css">
+<link rel="stylesheet" type="text/css" href="CSS/sea.css">
 </head>
 <body>
+    <!-- The navigation and banner image -->
     <div class="header" id="banner">
         <ul>
             <li><a href="./index.html">Home</a></li>
+            <li><a href="./imagemap.html">Image Map</a></li>
+            <li><a href="./photogallery.html">Photo Gallery</a></li>
+            <li><a href="./video.html">Video</a></li>
             <li><a href="./sitemap.html">Sitemap</a></li>
             <li><a href="./sourcelog.html">Source Log</a></li>
             <li><a href="./feedback.html">Feedback</a></li>
@@ -18,12 +22,14 @@
           <h1>Feedback Form</h1>
         </div>
     </div>
+
+    <!-- Feedback form -->
     <div class="form">
         <form method="POST" action="mailto:abc@example.com">
             <label for="name">Your name</label><br>
-            <input type="text" id="name" name="name" size="40" placeholder="Your name is..."><br>
+            <input type="text" id="name" name="name" size="40" placeholder="Your name is..." style="font-family:Comic Sans MS"><br>
             <label for="email">Your email address</label><br>
-            <input type="text" id="email" name="email" size="40" placeholder="Your email is..."><br>
+            <input type="text" id="email" name="email" size="40" placeholder="Your email is..." style="font-family:Comic Sans MS"><br>
             <label for="gender">What is your gender?</label><br>
             <input type="radio" value="Male">
             <label for="Male">Male</label>
@@ -34,13 +40,11 @@
             <input type="radio" value="I prefer not to say">
             <label for="I prefer not to say">I prefer not to say</label><br>
             <label for="feedback">Please fill in your feedback below</label><br>
-            <textarea id="feedback" rows="10" cols="40" placeholder="Please type your feedback here..."></textarea><br>
+            <textarea id="feedback" rows="10" cols="40" placeholder="Please type your feedback here..." style="font-family:Comic Sans MS"></textarea><br>
             <!-- horizontal rule -->
             <hr width="500" align="left"></hr>
-            <label for="submit">Submit:</label>
-            <input type="submit" value="Send it">
-            <label>or</label>
-            <input type="reset" value="Clear">
+            <input class="clear" type="reset" value="Clear" style="font-family:Comic Sans MS">
+            <input class="submit" type="submit" value="Send it" style="font-family:Comic Sans MS">
             <hr width="500" align="left"></hr>
           </form>
     </div>

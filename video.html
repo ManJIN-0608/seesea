@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>
+    Storyboard and Video
+</title>
+<link rel="stylesheet" type="text/css" href="CSS/sea.css">
+</head>
+<body>
+    <!-- The navigation and banner image -->
+    <div class="header" id="banner">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./imagemap.html">Image Map</a></li>
+            <li><a href="./photogallery.html">Photo Gallery</a></li>
+            <li><a href="./video.html">Video</a></li>
+            <li><a href="./sitemap.html">Sitemap</a></li>
+            <li><a href="./sourcelog.html">Source Log</a></li>
+            <li><a href="./feedback.html">Feedback</a></li>
+        </ul>
+        <div id="banner-text"> 
+          <h1>Storyboard and Video</h1>
+        </div>
+    </div>
+
+    <!-- insert the storyboard of the video -->
+    <div class="storyboard">
+        <h1 id="board" style="text-align: center; color: skyblue;">Let's Gold Coast Storyboard</h1>
+        <h3 style="text-align: center">This storyboard shows a graphic representation of how the video will unfold, 
+            shot by shot. It includes two boards and you can view the boards in order.</h3>
+        <a href="./Images/storyboardpage1.jpg"><img src="./Images/storyboardpage1.jpg"></a>
+        <a href="./Images/storyboardpage2.jpg"><img src="./Images/storyboardpage2.jpg"></a>
+    </div>
+
+    <!-- insert the inlined video -->
+    <h1 id="video" style="text-align: center; color: skyblue;">Let's Gold Coast Video</h1>
+    <h3 style="text-align: center">This video shows the Gold Coast excursions and some amazing views. 
+        If you can't wait to see the Gold Coast's waterfront and all the cute animals, 
+        then click now!</h3>
+    <div class="centre">
+        <video controls="controls" width="800px" loop="loop">
+            <source src="Video/GC.mp4" type="video/mp4" />
+            <object data="movie.mp4" width="800px">
+                <embed width="800px" src="Video/GC.mp4">
+            </object>
+        </video>  
+    </div>
+</body>
+</html>
